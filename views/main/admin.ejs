@@ -1,0 +1,9 @@
+<%- include('../partials/header') -%>
+<h1>Hurray you are admin</h1>
+<a href="/user/ecell/admin/register">admin Register</a>
+<hr>
+<h1>Undeployed Blogs</h1>
+<% blogs.forEach(function(blog){ %>
+	<a href="/blogs/<%= blog._id %>"><%= blog.title %></a>
+<% }) %>
+<%- include('../partials/footer') -%>

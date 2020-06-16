@@ -1,0 +1,112 @@
+<%- include("../partials/header") %>
+<link rel="stylesheet" type="text/css" href="/stylesheet/contactUs.css">
+<style type="text/css">
+  .html2 {
+  background-image: url("/images/contact.jpg"), linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1)); 
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  color:black;
+}
+.html2 a{
+  color:#1100cf;
+}
+</style>
+<div class="container">
+
+  <header class="jumbotron html2">
+    <div class="container">
+      <h1>Contact Us.</h1> 
+      <p><a href="/">Entrepreneurship Cell, ABV-IIITM, Gwalior</a></p>
+    </div>
+    
+  </header>
+</div>
+<section class="my-5">
+
+<div class="container">
+<div class="row">
+
+<!-- Grid column -->
+<div class="col-lg-5 mb-lg-0 mb-4">
+  <!-- form start -->
+  <div class="container html" id="ContactUsForm">
+    <h1 style="text-align: center">Get In Touch</h1>
+    <p style="text-align: center">Feel free to contact us in case of any queries </p>
+    <div class="row">
+      
+      <div style="margin: 25px auto">
+        
+        <form target="_self" onsubmit="return postToGoogleMessage();" action="" autocomplete="off">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" id="nameField" required="required" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" name="mail" id="emailField" required="required" placeholder="Email" />
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" name="message" id="messageField" placeholder="Message"></textarea>
+          </div>
+
+
+          <div class="form-group">
+            <button type="submit" id="submit" name="submit" class="btn btn-primary btn-lg btn-block">Send Message</button> 
+          </div>
+          
+          
+        </form>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  
+</div>
+<div class="col-lg-7">
+
+  <!--Google map-->
+  <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+    <iframe src="https://maps.google.com/maps?q=Indian+Institute+of+Information+Technology+and+Management+Gwalior&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+      style="border:0" allowfullscreen></iframe>
+  </div>
+    <div class="row" >
+      <div class="col-sm-4 IconMidddle" style="padding-top: 10px;">
+        <i class="map marker alternate icon"></i>
+        <div>
+          ABV-IIITM<br>
+          Gwalior
+        </div>
+        <hr>
+      </div>
+      <div class="col-sm-4 IconMidddle" style="padding-top: 10px;">
+        <i class="envelope icon"></i>
+        <div>
+          ecell@iiitm.ac.in
+        </div>
+        <hr>
+      </div>
+      <div class="col-sm-4 IconMidddle" style="padding-top: 10px;">
+        <i class="phone icon"></i>
+        <div>
+          +91-8171594356
+        </div>
+        <div>
+          +91-6265104906
+        </div>
+        <hr>
+      </div>
+      
+    </div>
+    
+  
+</div>
+
+  </div>
+  </div>
+</section>
+
+<%- include("../partials/footer") %>

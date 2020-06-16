@@ -1,0 +1,288 @@
+<%- include("partials/landingHeader") %>
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
+      <img src="/images/logo-e.png" alt="" style="width: 100px;" id="ecellLogo">
+      <h1>Entrepreneurship Cell</h1>
+      <h4><a href="https://www.iiitm.ac.in/">Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior</a></h4>
+      <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Explore</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up" style="text-align: center; padding-top: 15px;">
+        <h1>About us</h1>
+        
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= About Boxes Section ======= -->
+    <section id="about-boxes" class="about-boxes">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <p>Entrepreneurship Cell has been established with the intent to develop ecosystem
+			across ABV-IIITM with primary objectives such as:<br>
+			<ul>
+			a) To develop Entrepreneurial drive among students (by raising awareness,
+			motivation and understanding).<br>
+			b) To train students in the skills they need to set up a business and manage its
+			growth.<br>
+			c) To develop the Entrepreneurial approach to identify and exploit
+			opportunities.<br>
+
+			</ul>
+			ABV-IIITM students are geared up to encourage self-employment in all domains
+			for student start-ups.<br>
+			We have started the process of promoting and strengthening
+			entrepreneurship amongst Students and Technology targeted groups across our
+			campus by organizing Entrepreneurship Awareness Camps to foster the
+			temperament of Entrepreneurial convergence and also to develop skill-sets
+			required for same.</p>
+          
+          <a class="btn btn-success btn-sm" id="forMore-button" href="/about-us" >For more..</a>
+        </div>
+
+      </div>
+    </section><!-- End About Boxes Section -->
+
+    
+
+    <!-- ======= Services Section ======= -->
+    <section id="event" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events..</h2>
+          <p>Check our Events..</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <% myEvent.forEach(function(event){ %>
+			<div class="col-md-4 ">
+				<div class="myCard">
+				<a href="/events/<%= event._id %>">
+				<img class="card-img-top" src="<%= event.image %>" alt="Event_image">
+				<hr>	
+				<h2 class="card-title font-weight-bold"><%= event.title.toUpperCase() %></h2>
+				</a>
+				</div>
+			</div>
+			<% }) %>
+              
+          
+          
+          
+        </div>
+        <div class="row">
+        	<div class="col-5" style="margin: 20px auto">
+        		<a class="btn btn-success" href="/events" style="width: 100%">For more events...</a>
+        	</div>
+        	
+        	
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/Elon.jpg" class="testimonial-img" alt="">
+            <h3>Elon musk</h3>
+            <h4> CEO &amp; Founder of SpaceX</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              When Henry Ford made cheap, reliable cars, people said, 'Nah, what's wrong with a horse?' That was a huge bet he made, and it worked." OR ""The first step is to establish that something is possible; then probability will occur."
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/Kunal-Shah.jpg" class="testimonial-img" alt="">
+            <h3>Kunal shah</h3>
+            <h4>
+                Founder and CEO - CRED</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Don't bank on just marketing your idea, build value 
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/Ritesh.jpg" class="testimonial-img" alt="">
+            <h3>Ritesh Agarwal</h3>
+            <h4>CEO of OYO Rooms</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              It is extremely important to build something that a 100 people absolutely love using rather than make something that a 1000 people would just , kind of , Like.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/Steve-Jobs.jpg" class="testimonial-img" alt="">
+            <h3>Steve jobs</h3>
+            <h4>American business magnate</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I always advise people — Don’t wait! Do something when you are young, when you have nothing to lose, and keep that in mind.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/peter.jpg" class="testimonial-img" alt="">
+            <h3>Peter Theil</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              The single most powerful pattern I have noticed is that successful people find value in unexpected places.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="gallery" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Check our Galleries..</p>
+        </div>
+
+        
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        	<% myGallery.forEach(function(media){ %>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+
+            <img src="<%= media.image %>" class="img-fluid" alt="media" style="width: 100%">
+            <div class="portfolio-info">
+              <h4><%= media.description %></h4>
+              
+            </div>
+          </div>
+
+    		 <% }) %>
+        </div>
+        <div class="row">
+        	<div class="col-5" style="margin: 20px auto">
+        		<a class="btn btn-success" href="/gallery" style="width: 100%">For more galleries...</a>
+        	</div>
+        	
+        	
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="blog" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Blogs</h2>
+          <p>Check out Blogs..</p>
+        </div>
+
+        <div class="row">
+
+         
+        	<% myBlog.forEach(function(blog){ %>
+			<div class="col-md-4 ">
+				<div class="myCard">
+				<a href="/blogs/<%= blog._id %>">
+					<div class="background" style="background: url(<%= blog.image %>) no-repeat; background-size: 100% 100%;">
+						  <div class="transbox">
+						    <p>
+									<%= blog.title.toUpperCase() %>
+							</p>
+						  </div>
+						</div>
+					<hr>
+					<p>
+					<%= blog.shortDescription.substring(0,50) %>...
+					</p>
+				</a>
+				</div>
+			</div>
+			<% }) %>
+
+          
+        </div>
+        <div class="row" style="margin: 20px;">
+        	<div class="col-6">
+        		<a href="/user/login" class="btn btn-primary btn-sm">Login as an Author..</a>
+        	</div>
+        	<div class="col-6">
+        		<a href="/blogs" class="float-right btn btn-primary btn-sm">For more blogs..</a>
+        	</div>
+        	
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+    <div class=" section-title">
+        <div class="row">
+        	<div class="col-6" style="margin: 20px auto 0px auto">
+        		<a class="btn btn-primary btn-lg" href="/contact-us" style="width: 100%">Contact Us..</a>
+        	</div>
+        	
+        	
+        </div>
+        
+      </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top"><i class="arrow up icon"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+<%- include("partials/footer") %>

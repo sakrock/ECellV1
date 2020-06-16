@@ -1,0 +1,54 @@
+<%- include('../partials/header') -%>
+
+<div class="container">
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+	  <strong>You can now use HTML tags for styling</strong>...
+	  <p>
+	  	<em><strong>Note:</strong> Harmful HTML tags will be sanitized....</em>
+	  </p>
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    <span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+</div>
+
+<div class="container">
+	<h1 style="text-align: center">Create new Blog</h1>
+	<div class="row">
+		
+		<div class="col-md-6 col-10" style=" margin: 25px auto">
+			
+			<form method="POST", action="/blogs">
+				<div class="form-group">
+					<input class="form-control" type="text" name="newBlog[title]" placeholder="Title" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="newBlog[image]"
+					placeholder="Image URL" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="newBlog[shortDescription]"
+					placeholder="shortDescription" required>
+				</div>
+
+				<div class="form-group">
+					<!-- <input class="form-control" type="text" name="newBlog[description]"
+					placeholder="start writing"> -->
+					<textarea class="form-control" name="newBlog[description]" placeholder="start writing the blog ...." style="height: 200px;"></textarea>
+				</div>
+
+
+				<div class="form-group">
+					<button class="btn btn-primary btn-lg btn-block">Submit</button>
+				</div>
+				
+				
+			</form>
+			<a href="/blogs">Go Back!!</a>
+		</div>
+		
+	</div>
+</div>
+<hr>
+
+<%- include('../partials/footer') -%>

@@ -1,0 +1,46 @@
+<%- include('../partials/header') -%>
+
+<div class="container">
+	<h1 style="text-align: center">Register as an Admin...</h1>
+	<div class="row">
+		
+		<div class="col-md-5 col-8" style=" margin: 25px auto">
+			
+			<form action="/user/ecell/admin/register" method="POST">
+				<div class="form-group">
+					<input class="form-control" type="text" name="username" placeholder="username" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="email" name="email" placeholder="email" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="password" name="password" placeholder="password" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="password" name="secret" placeholder="secret" required>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn-primary btn-lg btn-block">Submit</button>
+				</div>
+				
+				
+			</form>
+			<a href="/user/login">Login...</a>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!-- <form action="/user/ecell/admin/register" method="POST">
+	<input type="text" name="username" placeholder="username">
+	<input type="email" name="email" placeholder="email">
+	<input type="password" name="password" placeholder="password">
+	<input type="password" name="secret" placeholder="secret">
+	<input type="submit">
+</form>
+<a href="/user/login">login</a> -->
+
+<%- include('../partials/footer') -%>

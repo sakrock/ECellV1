@@ -1,0 +1,24 @@
+#ContactUsForm{
+	padding-top: 20px;
+border:2px solid #DCDCDC;
+}
+.IconMidddle{
+	text-align: center;
+	background: #F8F8F8;
+	font-size: 90%;
+}
+.IconMidddle i{
+	font-size: 150%;
+	color:  #A9A9A9;
+}
+.IconMidddle i:hover{
+	color: #808080;
+}
+.html {
+    background-image: url("/images/earth-bk.jpg"), linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)); 
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top; 
+    color:black;
+}

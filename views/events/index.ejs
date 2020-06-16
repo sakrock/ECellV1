@@ -1,0 +1,48 @@
+<%- include("../partials/header") %>
+
+<style type="text/css">
+	.html2 {
+	background-image: url("/images/BK2.jpg"), linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1)); 
+	background-blend-mode: overlay;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	color:black;
+}
+</style>
+
+
+<div class="container">
+
+	<header class="jumbotron html2">
+		<div class="container">
+			<h1>EVENTS.</h1>	
+			<% if(userIsAdmin){ %>
+			<a href="/events/new" class="btn btn-danger btn-sm">NEW</a>
+			<% } %>
+		</div>
+		
+	</header>
+
+
+
+<div class="row">
+	<% myevents.forEach(function(event){ %>
+	<div class="col-md-4 ">
+		<div class="myCard">
+		<a href="/events/<%= event._id %>">
+		<img class="card-img-top" src="<%= event.image %>" alt="Event_image">
+		<hr>	
+		<h2 class="card-title font-weight-bold"><%= event.title.toUpperCase() %></h2>
+		</a>
+		</div>
+	</div>
+	<% }) %>
+	
+</div>
+
+</div>
+
+
+<hr>
+<%- include("../partials/footer") %>

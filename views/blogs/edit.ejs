@@ -1,0 +1,42 @@
+<%- include('../partials/header') -%>
+
+<div class="container">
+	<h1 style="text-align: center">Edit Your Blog.</h1>
+	<div class="row">
+		
+		<div class="col-md-6 col-10" style=" margin: 25px auto">
+			
+			<form method="POST", action="/blogs/<%= blog._id %>?_method=PUT">
+				<div class="form-group">
+					<input class="form-control" type="text" name="newBlog[title]" placeholder="Title" value="<%= blog.title %>" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="newBlog[image]"
+					placeholder="Image URL" value="<%= blog.image %>" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="newBlog[shortDescription]"
+					placeholder="shortDescription" value="<%= blog.shortDescription %>" required>
+				</div>
+
+				<div class="form-group">
+					<!-- <input class="form-control" type="text" name="newBlog[description]"
+					placeholder="start writing" value="<%= blog.description %>"> -->
+					<textarea class="form-control" name="newBlog[description]" placeholder="start writing the blog ...." style="height: 200px;"><%= blog.description %></textarea>
+				</div>
+
+
+				<div class="form-group">
+					<button class="btn btn-primary btn-lg btn-block">Submit</button>
+				</div>
+				
+				
+			</form>
+			<a href="/blogs">Go Back!!</a>
+		</div>
+		
+	</div>
+</div>
+<hr>
+
+<%- include('../partials/footer') -%>
